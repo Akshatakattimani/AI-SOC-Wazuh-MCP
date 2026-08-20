@@ -62,9 +62,5 @@ The current system follows this workflow:
 6. **MCP Inspector**
    - Used to test and interact with the MCP tools.
 
-&#x20;            |
 
-&#x20;            v
-
-&#x20;       MCP Inspector
 
