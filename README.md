@@ -61,6 +61,17 @@ The current system follows this workflow:
 
 6. **MCP Inspector**
    - Used to test and interact with the MCP tools.
+  
+
+## 📸 Project Evidence
+
+Selected screenshots demonstrating the current implementation:
+
+- [Wazuh client retrieving real security alerts](screenshots/01-windows-wazuh-client-live-alerts.png)
+- [MCP installation and environment](screenshots/02-mcp-installed.png)
+- [MCP Inspector connected to the server](screenshots/03-mcp-inspector-connected.png)
+- [MCP security tools working](screenshots/04-mcp-server-tools-working.png)
+- [MCP retrieving real Wazuh alerts](screenshots/05-mcp-real-wazuh-alerts.png)
 
 
 
