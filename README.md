@@ -36,49 +36,31 @@ The project is being developed in stages:
 
 
 
-\## 🏗️ Current Architecture
+## 🏗️ Current Architecture
 
+The current system follows this workflow:
 
+1. **Windows Host**
+   - Wazuh Agent collects security telemetry.
 
-```text
+2. **Kali Linux**
+   - Wazuh Manager receives and processes events.
+   - Wazuh Indexer stores security events.
+   - Wazuh Dashboard provides monitoring and investigation.
 
-Windows Host
+3. **Python Alert Bridge**
+   - Runs on port `5600`.
+   - Provides access to Wazuh alert data.
 
-&#x20;    |
+4. **Python Wazuh Client**
+   - Connects to the Alert Bridge.
+   - Retrieves recent Wazuh alerts and SOC summary information.
 
-&#x20;    | Wazuh Agent
+5. **MCP Server**
+   - Exposes Wazuh investigation capabilities as MCP tools.
 
-&#x20;    v
-
-Kali Linux
-
-&#x20;    |
-
-&#x20;    +-- Wazuh Manager
-
-&#x20;    +-- Wazuh Indexer
-
-&#x20;    +-- Wazuh Dashboard
-
-&#x20;            |
-
-&#x20;            v
-
-&#x20;     Python Alert Bridge
-
-&#x20;         Port 5600
-
-&#x20;            |
-
-&#x20;            v
-
-&#x20;     Python Wazuh Client
-
-&#x20;            |
-
-&#x20;            v
-
-&#x20;         MCP Server
+6. **MCP Inspector**
+   - Used to test and interact with the MCP tools.
 
 &#x20;            |
 
