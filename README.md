@@ -65,13 +65,35 @@ The current system follows this workflow:
 
 ## 📸 Project Evidence
 
-Selected screenshots demonstrating the current implementation:
+### 1. Wazuh Client — Real Security Alerts
 
-- [Wazuh client retrieving real security alerts](screenshots/01-windows-wazuh-client-live-alerts.png)
-- [MCP installation and environment](screenshots/02-mcp-installed.png)
-- [MCP Inspector connected to the server](screenshots/03-mcp-inspector-connected.png)
-- [MCP security tools working](screenshots/04-mcp-server-tools-working.png)
-- [MCP retrieving real Wazuh alerts](screenshots/05-mcp-real-wazuh-alerts.png)
+The Python Wazuh client successfully connects to the Alert Bridge and retrieves real Wazuh security alerts.
+
+![Wazuh Client Real Alerts](screenshots/01-windows-wazuh-client-live-alerts.png)
+
+### 2. MCP Installation
+
+MCP is installed and configured in the Python environment.
+
+![MCP Installation](screenshots/02-mcp-installed.png)
+
+### 3. MCP Inspector — Server Connected
+
+MCP Inspector successfully connects to the custom AI-SOC MCP server.
+
+![MCP Inspector Connected](screenshots/03-mcp-inspector-connected.png)
+
+### 4. MCP Security Tools
+
+The MCP server exposes security investigation tools for interacting with Wazuh.
+
+![MCP Security Tools](screenshots/04-mcp-server-tools-working.png)
+
+### 5. MCP — Real Wazuh Alerts
+
+The MCP server successfully retrieves real Wazuh alert data.
+
+![MCP Real Wazuh Alerts](screenshots/05-mcp-real-wazuh-alerts.png)
 
 
 
