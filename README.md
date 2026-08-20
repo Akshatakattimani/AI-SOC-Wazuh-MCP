@@ -44,69 +44,45 @@ The project is being developed in stages:
 
 Windows Host
 
-&#x20;    │
+&#x20;    |
 
-&#x20;    │ Wazuh Agent
+&#x20;    | Wazuh Agent
 
-&#x20;    ▼
+&#x20;    v
 
 Kali Linux
 
-&#x20;    │
+&#x20;    |
 
-&#x20;    ├── Wazuh Manager
+&#x20;    +-- Wazuh Manager
 
-&#x20;    ├── Wazuh Indexer
+&#x20;    +-- Wazuh Indexer
 
-&#x20;    └── Wazuh Dashboard
+&#x20;    +-- Wazuh Dashboard
 
-&#x20;            │
+&#x20;            |
 
-&#x20;            ▼
+&#x20;            v
 
-&#x20;      Python Alert Bridge
+&#x20;     Python Alert Bridge
 
 &#x20;         Port 5600
 
-&#x20;            │
+&#x20;            |
 
-&#x20;            ▼
+&#x20;            v
 
-&#x20;       Python Wazuh Client
+&#x20;     Python Wazuh Client
 
-&#x20;            │
+&#x20;            |
 
-&#x20;            ▼
+&#x20;            v
 
 &#x20;         MCP Server
 
-&#x20;            │
+&#x20;            |
 
-&#x20;            ▼
+&#x20;            v
 
 &#x20;       MCP Inspector
-
-
-
-
-
-\## 🛠️ Current Implementation
-
-
-
-The current implementation successfully connects Wazuh security monitoring with a custom MCP server and retrieves real Wazuh security alerts through MCP tools.
-
-
-
-\### Available MCP Tools
-
-
-
-\- `get\_recent\_alerts`
-
-\- `search\_alerts`
-
-\- `get\_alert\_summary`
-
-\- `check\_wazuh\_health`
 
